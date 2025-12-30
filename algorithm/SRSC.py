@@ -25,7 +25,7 @@ class SRSC:
 
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.scoreNet = CondRefineNetDilated(2, 2, 64).to(device)
-        self.scoreNet.load_state_dict(torch.load('./utils/checkpoint/FRSGM.pth'))
+        self.scoreNet.load_state_dict(torch.load('./utils/checkpoint/net.pth'))
         self.scoreNet.eval()
         self.gamma = 1.3
         self.lam = 0.006
@@ -85,4 +85,5 @@ class SRSC:
         s = Kernel_Rec_ks_C_I_Pro((1 - self.T_mask) * FFT2_3D_N(x), self.T_Ker)
         s = IFFT2_3D_N((1 - self.T_mask) * Kernel_Rec_ks_C_I_Pro(s, self.T_Ker_Tra))
         return s + x
+
     
