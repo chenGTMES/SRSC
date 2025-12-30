@@ -28,14 +28,14 @@ The code includes a set of **Phantom data** for quick testing.
 * `environment.yml` – Conda environment specification.
 * `data/` – Contains example Phantom test data.
 * `mask/` – Contains example undersampled mode.
-* `algorithm/ADDL.py` – Our propose ADDL algorithm.
+* `algorithm/SRSC.py` – Our propose ADDL algorithm.
 * `utils/` – Supporting modules.
 
 ## 📦 Pretrained Models & Training Data & Undersampled Mode
 
 Pretrained ADDL networks and additional test data are available at:
 
-👉 [Google Drive - ADDL Resources](https://drive.google.com/drive/folders/1GkizZg6Qgszza4yq0NN3csjsCeYWi2Mb?usp=drive_link)
+👉 [Google Drive - SRSC Resources](https://drive.google.com/drive/folders/1-VAxvTfvSRAaP-iesDgRdYz5vY1tLILD?usp=drive_link)
 
-* Please place the file `checkpoint/net.pth` in folder [`utils/checkpoint`](./utils/checkpoint).
+* Please place the file `net.pth` in folder [`utils/checkpoint`](./utils/checkpoint).
 * Generate your own sampling patterns via `gen_mask.m`.
