@@ -39,3 +39,4 @@ Pretrained ADDL networks and additional test data are available at:
 
 * Please place the file `net.pth` in folder [`utils/checkpoint`](./utils/checkpoint).
 * Generate your own sampling patterns via `gen_mask.m`.
+* For questions or suggestions, please contact me at: 2019151068@email.szu.edu.cn
